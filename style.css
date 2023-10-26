@@ -69,10 +69,10 @@ h1 {
 }
 
 .quiz-option input[type="radio"]:checked + label {
-    background-color: #007bff; /* Blue for selected answers */
+    background-color: #ff9090; /* Blue for selected answers */
     color: #fff;
     transform: scale(1.05);
-    transition: transform 0.3s;
+    transition: transform 0.6s;
 }
 
 #next-btn {

@@ -120,8 +120,8 @@ const showQuestion = () => {
         quiz[currentQuestion].options.forEach((data, index) => {
             let optionDiv = document.createElement('div');
             let input = document.createElement('input');
-            let label = document.createElement('label');
             input.type = 'radio';
+            let label = document.createElement('label');
             input.id = `option-${index}`;
             input.name = 'quiz-option';
             input.value = data;
@@ -138,11 +138,13 @@ const showQuestion = () => {
             queDiv.appendChild(optionDiv);
         });
         quizContainer.appendChild(queDiv);
-    } else {
+    } 
+    else {
         resultContainer.style.display = 'block';
         showResult();
         quizContainer.style.display = 'none';
         nextBtn.style.display = 'none';
+
     
             
     }
